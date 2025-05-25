@@ -189,13 +189,12 @@
                
                .subject-card summary {
                    padding: 15px;
-                   background: #4070f4;
+                   background: #713caa;
                    color: white;
                    font-weight: bold;
                    cursor: pointer;
                    position: relative;
                }
-               
                .subject-card summary::after {
                    content: '+';
                    position: absolute;
@@ -205,6 +204,30 @@
                .subject-card[open] summary::after {
                    content: '-';
                }
+
+               .sub-card summary {
+                   padding: 15px;
+                   background: #4070f4;
+                   color: white;
+                   font-weight: bold;
+                   cursor: pointer;
+                   position: relative;
+                   border-bottom: 2px solid #92a2bd;
+               }
+
+               .subject-card .sub-card summary::after {
+                   content: '+';
+                   position: absolute;
+                   right: 15px;
+               }
+               
+               .sub-card[open] summary::after {
+                   content: '-';
+               }
+
+               
+               
+               
                
                .subject-content {
                    padding: 15px;
@@ -212,13 +235,14 @@
                
                .unit-list {
                    list-style: none;
-                   padding: 0;
+                   padding: 0px;
                }
                
                .unit-item {
-                   margin-bottom: 15px;
-                   padding-bottom: 15px;
-                   border-bottom: 1px dashed #e0e0e0;
+                   padding-left: 15px;
+                   padding-bottom: 2px;
+                   padding-right: 2px;
+                   border-bottom: 2px solid #2762c7;
                }
                
                .unit-item:last-child {
@@ -231,7 +255,7 @@
                    display: flex;
                    justify-content: space-between;
                    align-items: center;
-                   margin-bottom: 10px;
+                   margin-bottom: 5px;
                }
                
                .download-btn {
@@ -282,12 +306,16 @@
             <!-- Programming For Problem Solving -->
             <details class="subject-card">
                 <summary>Programming For Problem Solving</summary>
-                <div class="subject-content">
+
+                <!-- PPS Module Notes -->
+                <details class="sub-card">
+                <summary>PPS Module</summary>
+                <div class="sub-item">
                     <ul class="unit-list">
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 1: <hr>Introduction To Programming</h3>
-                                <a href="https://drive.google.com/drive/folders/14LhkJb2S_4inMZjXOaVHsJ4wjMKPD7zZ?usp=drive_link" download target="_blank" class="download-btn">
+                                <h3><b>Unit 1 :</b> Introduction To Programming</h3>
+                                <a href="https://drive.google.com/file/d/11k5pCzBnsoUCaylnMBFpVcnfm_rg4auu/view?usp=drive_link" download target="_blank" class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -295,8 +323,8 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 2: <hr>Operators</h3>
-                                <a href="https://drive.google.com/drive/folders/1rQPcEUprVETxeCw2iwQrjbXccNNVNsuD?usp=drive_link" download target="_blank" class="download-btn">
+                                <h3><b>Unit 2 :</b> Operators</h3>
+                                <a href="https://drive.google.com/file/d/12f8EJkG9h54eTv5C9kYcgYwa3vW7Hr6u/view?usp=drive_link" download target="_blank" class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -304,8 +332,8 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 3: <hr>Conditional Branching And Loops</h3>
-                                <a href="https://drive.google.com/drive/folders/1D7D25sRoiyBXrcYW0BYKUNvrC1f1wwPM?usp=drive_link" download  target="_blank"  class="download-btn">
+                                <h3><b>Unit 3 :</b> Conditional Branching And Loops</h3>
+                                <a href="https://drive.google.com/file/d/1U1HeS7kQE8J323V_5E9Wm-YReZSUjo7g/view?usp=drive_link" download  target="_blank"  class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -314,8 +342,8 @@
                     
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 4: <hr>Array and String</h3>
-                                <a href="https://drive.google.com/drive/folders/1F9kTOy4MaaBoNIK4d4W2ikn7ggPL10mv?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Unit 4 :</b> Array and String</h3>
+                                <a href="https://drive.google.com/file/d/1oxQzFhjirUlaidYSY-WFJvHXQE2X0Djc/view?usp=drive_link" download target="_blank"  class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -323,8 +351,8 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 5: <hr>Basic Algorithms</h3>
-                                <a href="https://drive.google.com/drive/folders/1WOzMJqI4EgAC-hesUrxJdYByH82kAFm5?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Unit 5 :</b> Basic Algorithms</h3>
+                                <a href="https://drive.google.com/file/d/160GeT5UEjCVpxk3fzX7ginVJNEg3rRy-/view?usp=drive_link" download target="_blank"  class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -332,8 +360,8 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 6: <hr>Functions</h3>
-                                <a href="https://drive.google.com/drive/folders/1UkvoL4K6fAWg3npXkjAMTxVi0Mib5rN1?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Unit 6 :</b> Functions</h3>
+                                <a href="https://drive.google.com/file/d/1orla0WdX7FKie1Hlx7qMdX9invVRYupg/view?usp=drive_link" download target="_blank"  class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -341,8 +369,8 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 7: <hr>Recursion</h3>
-                                <a href="https://drive.google.com/drive/folders/1iyKqQMlHlgZb7Hf-wDYNVXe2W7M2VlNV?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Unit 7 :</b> Recursion</h3>
+                                <a href="https://drive.google.com/file/d/1egm7Jbx9wGHfpRfnXgA3ZN2o7Rx8YnAg/view?usp=drive_link" download target="_blank"  class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -350,8 +378,8 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 8: <hr>Structure And Union</h3>
-                                <a href="https://drive.google.com/drive/folders/172miAVdryldN9z00ZsU1gYz6L2KFU01q?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Unit 8 :</b> Structure And Union</h3>
+                                <a href="https://drive.google.com/file/d/1eKvJqHJaelGdL-xcBmAcQttZLG_EVD2y/view?usp=drive_link" download target="_blank"  class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -359,8 +387,8 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 9: <hr>Pointers</h3>
-                                <a href="https://drive.google.com/drive/folders/1UeiTLIImVmM2-Sf5cAL_5SO4aNvd9ry_?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Unit 9 :</b> Pointers</h3>
+                                <a href="https://drive.google.com/file/d/13MxDlXbrOgJ7FZBfj3r-EUBb3xAhYm7M/view?usp=drive_link" download target="_blank"  class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -368,8 +396,8 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 10: <hr>File Handling</h3>
-                                <a href="https://drive.google.com/drive/folders/1BIn7ezUrkDnUFskf0TfpmsYibnLcdbgE?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Unit 10 :</b> File Handling</h3>
+                                <a href="https://drive.google.com/file/d/1HfGoOMU0LGEFyIjiI77NTzt67oknVhRE/view?usp=drive_link" download target="_blank"  class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -377,35 +405,80 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 11: <hr>Dynamic Memory Allocation</h3>
-                                <a href="https://drive.google.com/drive/folders/104CNdxuKBrYEm7e50_4ThLov47QvO5mE?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Unit 11 :</b> Dynamic Memory Allocation</h3>
+                                <a href="https://drive.google.com/file/d/1KSpmudYYIJ5eXN1aMwf56nC6ByNVrvpR/view?usp=drive_link" download target="_blank"  class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
                             </div>
                         </li>
-                        <li class="unit-item">
-                            <div class="unit-title">
-                                <h3>Miscellaneous</h3>
-                                <a href="https://drive.google.com/drive/folders/1q4pjx3-kQxItmPvbnSwRmtSNt-0bvntr?usp=drive_link" download target="_blank"  class="download-btn">
-                                    <img src="logo/download.png" alt="download" height="20" width="20">
-                                    Download
-                                </a>
-                            </div>
-                        </li>
+                    
                     </ul>
                 </div>
+                </details>
+                                
+                <!-- PPS PYQ's Solution (BEU) -->
+                <details class="sub-card">
+                <summary>PPS PYQ's Solution (BEU)</summary>
+                <div class="sub-item">
+                    <ul class="unit-list">
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3>PPS PYQ's Solution - 2021 code - 100104</h3>
+                                <a href="https://drive.google.com/file/d/1eorb9HALrgH3NEAYrWhGlCPAkXhN-lKH/view?usp=drive_link" download target="_blank" class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3>PPS PYQ's Solution - 2022 code - 100104</h3>
+                                <a href="https://drive.google.com/file/d/1sJUzeuyGp0VJrXa_TnYtwa_DV-tSxmIL/view?usp=drive_link" download target="_blank" class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3>PPS PYQ's Solution - 2023 code - 100104</h3>
+                                <a href="https://drive.google.com/file/d/1PBhEhPg2XWeu7-7VxBFLMbDClDHCa7sx/view?usp=drive_link" download  target="_blank"  class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                    
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3>PPS PYQ's Solution - 2024sp code - 100104</h3>
+                                <a href="https://drive.google.com/file/d/1aXTnTSKY-b0R8GgivdTyvrURhWsoFLA5/view?usp=drive_link" download target="_blank"  class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                    
+                    </ul>
+                </div>
+                </details>
+                
             </details>
             
             <!-- IT Workshop -->
             <details class="subject-card">
                 <summary>IT Workshop</summary>
-                <div class="subject-content">
+
+                <!-- Unit-wise Notes -->
+                <details class="sub-card">
+                <summary>Unit-wise Notes</summary>
+                <div class="sub-item">
                     <ul class="unit-list">
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 1: <hr>PC HARDWARE</h3>
-                                <a href="https://drive.google.com/drive/folders/1vIkUBn3EzaQas-Ypd6Q6c6YV664Tmycp?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Unit 1 :</b> PC Hardware</h3>
+                                <a href="https://drive.google.com/file/d/1JdzneCEv8dEE_c3Hj6kYI2HvZDBbIX2O/view?usp=drive_link" download target="_blank" class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -413,8 +486,8 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 2: <hr>INTERNET</h3>
-                                <a href="https://drive.google.com/drive/folders/1zbOp6HKEpYBeIldSEbf4d6BU0aXdGMKj?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Unit 2 :</b> Internet</h3>
+                                <a href="https://drive.google.com/file/d/1Epo3atxRJDjS_Lk70KxsgnDWZ8eoTuvp/view?usp=drive_link" download target="_blank" class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -422,8 +495,18 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 3: <hr>MICROSOFT WORD</h3>
-                                <a href="https://drive.google.com/drive/folders/1jRGHR5_E-E342MuzaMZH5kfk20FcUtRL?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Unit 3 :</b> Microsoft Word</h3>
+                                <a href="https://drive.google.com/file/d/13ykA_vctPNNer1uQw1baCYz_Ig5GM4VE/view?usp=drive_link" download  target="_blank"  class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                    
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3><b>Unit 4 :</b> LaTeX</h3>
+                                <a href="https://drive.google.com/file/d/1H9Ixq_VAaFNkLjfuG26S3KrAjLfqR9Sg/view?usp=drive_link" download target="_blank"  class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -431,8 +514,8 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 4: <hr>LaTeX</h3>
-                                <a href="https://drive.google.com/drive/folders/1ps0ZW__kAncwlRoutfiGfrTP5MijVr3c?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Book :</b> LaTeX</h3>
+                                <a href="https://drive.google.com/file/d/1244uMgaEGhJDiVV8jK8z0fQnlfjG2ScA/view?usp=drive_link" download target="_blank"  class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -440,8 +523,8 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 5: <hr>MICROSOFT EXCEL</h3>
-                                <a href="https://drive.google.com/drive/folders/1T956fp0nCmLz1ss702trTkWow2lk5X9P?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Unit 5 :</b> Microsoft Excel</h3>
+                                <a href="https://drive.google.com/file/d/1l3dHbQYJawjO7Y7LirX13PK8gPwjt8Yz/view?usp=drive_link" download target="_blank"  class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -449,45 +532,199 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 6: <hr>MICROSOFT POWERPOINT </h3>
-                                <a href="https://drive.google.com/drive/folders/1AjTh1vc8aTb6V-fBdpjkiiD1Gi-aQHfY?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Unit 6 :</b> Microsoft PowerPoint</h3>
+                                <a href="https://drive.google.com/file/d/1PZChs7EHY0mVwkUVmaPEzogb-ZhHTsf5/view?usp=drive_link" download target="_blank"  class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
                             </div>
                         </li>
+                    
                     </ul>
                 </div>
+                </details>
+
+                <!-- Practice Series -->
+                <details class="sub-card">
+                <summary>Unit-wise Notes</summary>
+                <div class="sub-item">
+                    <ul class="unit-list">
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3><b>Unit 1 :</b> PC Hardware</h3>
+                                <a href=" " download target="_blank" class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3><b>Unit 2 :</b> Internet</h3>
+                                <a href=" " download target="_blank" class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3><b>Unit 3 :</b> Microsoft Word</h3>
+                                <a href=" " download  target="_blank"  class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                    
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3><b>Unit 4 :</b> LaTeX</h3>
+                                <a href=" " download target="_blank"  class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3><b>Unit 5 :</b> Microsoft Excel</h3>
+                                <a href=" " download target="_blank"  class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3><b>Unit 6 :</b> Microsoft PowerPoint</h3>
+                                <a href=" " download target="_blank"  class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                    
+                    </ul>
+                </div>
+                </details>
+
             </details>
             
             <!-- C++ Programming -->
             <details class="subject-card">
                 <summary>C++ Programming</summary>
-                <div class="subject-content">
+
+                <!-- OOP Notes -->
+                <details class="sub-card">
+                <summary>Object Oriented Programming</summary>
+                <div class="sub-item">
                     <ul class="unit-list">
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>OOPs Using C++</h3>
-                                <a href="https://drive.google.com/drive/folders/13mgMBfWC3Xlyc58d_jLL_JQkdpMb0sTH?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3>OOP Using C++ </h3>
+                                <a href="https://drive.google.com/file/d/1fRs0BkXpp0HccMlxCUFzg4KpAZSH5Aox/view?usp=drive_link" download target="_blank" class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
                             </div>
                         </li>
-                        
+
+                    
                     </ul>
                 </div>
+                </details>
+
+                <!-- OOPs Using C++ PYQ's Solution (BEU) -->
+                <details class="sub-card">
+                <summary>OOP Using C++ PYQ's Solution (BEU)</summary>
+                <div class="sub-item">
+                    <ul class="unit-list">
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3>OOP PYQ's Solution - 2018 </h3>
+                                <a href="https://drive.google.com/file/d/1jwIyfAQbhoR2LfIRsotvt1O5xlN64oBs/view?usp=drive_link" download target="_blank" class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3>DSA PYQ's Solution - 2019</h3>
+                                <a href="https://drive.google.com/file/d/1bWORV9G6VpaDL8rzskFMgsTB_aEmPqHM/view?usp=drive_link" download target="_blank" class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3>DSA PYQ's Solution - 2020</h3>
+                                <a href="https://drive.google.com/file/d/1qiefwQZ4O-C4JQD1wS_ncJulSnIHUUkS/view?usp=drive_link" download  target="_blank"  class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                    
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3>DSA PYQ's Solution - 2020sp</h3>
+                                <a href="https://drive.google.com/file/d/1oKUJ-23mwav-1qO7gZRNmXWbRJTnTIDz/view?usp=drive_link" download target="_blank"  class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3>DSA PYQ's Solution - 2021</h3>
+                                <a href="https://drive.google.com/file/d/1vazMJK1eLVlHgTus4tAxJq4LKdt5T7Tt/view?usp=drive_link" download target="_blank"  class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3>DSA PYQ's Solution - 2022</h3>
+                                <a href="https://drive.google.com/file/d/1bukPrX46mraB-UJtNLWT-993qmYGAL3e/view?usp=drive_link" download target="_blank"  class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3>DSA PYQ's Solution - 2023</h3>
+                                <a href="https://drive.google.com/file/d/1bukPrX46mraB-UJtNLWT-993qmYGAL3e/view?usp=drive_link" download target="_blank"  class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                    
+                    </ul>
+                </div>
+                </details>
+                
+                
             </details>
 
             <!-- Data Structure & Algorithm -->
             <details class="subject-card">
                 <summary>Data Structure & Algorithm</summary>
-                <div class="subject-content">
+
+                <!-- Unit - Wise Notes -->
+                <details class="sub-card">
+                <summary>Unit - Wise Notes</summary>
+                <div class="sub-item">
                     <ul class="unit-list">
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 1: <hr>Introduction & Analysis of Algorithm</h3>
-                                <a href="https://drive.google.com/drive/folders/1UJB7h9z6xpgsV7QZRapXMiMTsljsRnj5?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Unit 1 :</b> Introduction & Analysis of Algorithm</h3>
+                                <a href="https://drive.google.com/file/d/1EPIiVk0AHgbXF_NIPdOl4NzgrNh_qwPW/view?usp=drive_link" download target="_blank" class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -495,8 +732,8 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 2: <hr>Linked List</h3>
-                                <a href="https://drive.google.com/drive/folders/1WaR1xG0UPoL4ZTJbTNuicAF2M-ebbw3Y?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Unit 2 :</b> Linked List</h3>
+                                <a href="https://drive.google.com/file/d/1WmkkfwfUrGvpuaLLkBmgcIioJjA8SDqL/view?usp=drive_link" download target="_blank" class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -504,8 +741,18 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 3: <hr>Stack and Queue </h3>
-                                <a href="https://drive.google.com/drive/folders/1vzo2p_94MysS6YL9VtDmpRwtomPwa3sd?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Unit 3 :</b> Stack and Queue</h3>
+                                <a href="https://drive.google.com/file/d/1rx3ghBE8pbQ339DnCuRO7ctpWniP4lN8/view?usp=drive_link" download  target="_blank"  class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                    
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3><b>Unit 4 :</b> Tree</h3>
+                                <a href="https://drive.google.com/file/d/1b_Tk1mcassYjOmQ6njNSiQBpnz1fVC7E/view?usp=drive_link" download target="_blank"  class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -513,8 +760,8 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 4: <hr>Tree</h3>
-                                <a href="https://drive.google.com/drive/folders/1Wd61S3Na42aRdBvNMM5p2bqVi2LKHWs1?usp=drive_link" download  target="_blank" class="download-btn">
+                                <h3><b>Unit 5 :</b> Hashing</h3>
+                                <a href="https://drive.google.com/file/d/1C8Yk3X2mIbH_xQPIAKy8_vWPWvkKFgQ_/view?usp=drive_link" download target="_blank"  class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -522,8 +769,8 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 5: <hr>Hashing</h3>
-                                <a href="https://drive.google.com/drive/folders/1OR5ECNkuIbQ9WmOreJkUZDOerApycfMF?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Unit 6 :</b> Graph</h3>
+                                <a href="https://drive.google.com/file/d/1MH_LuJpEEJZU_Uo9jUixGWgEf_YYiyF2/view?usp=drive_link" download target="_blank"  class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
@@ -531,34 +778,83 @@
                         </li>
                         <li class="unit-item">
                             <div class="unit-title">
-                                <h3>Unit 6: <hr>Graph</h3>
-                                <a href="https://drive.google.com/drive/folders/1-pCOuPC7hPFS59cjuvUU3-dplk4AOahZ?usp=drive_link" download target="_blank"  class="download-btn">
+                                <h3><b>Unit 7 :</b> Searching & Sorting</h3>
+                                <a href="https://drive.google.com/file/d/1khgY3AbH-omEHmLkpT_A3HlU1TSWWMKj/view?usp=drive_link" download target="_blank"  class="download-btn">
                                     <img src="logo/download.png" alt="download" height="20" width="20">
                                     Download
                                 </a>
                             </div>
                         </li>
-                        <li class="unit-item">
-                            <div class="unit-title">
-                                <h3>Unit 7: <hr>Searching & Sorting</h3>
-                                <a href="https://drive.google.com/drive/folders/1iDQoKZUmvd7YqHo6K7poPNJNVxk_g06k?usp=drive_link" download  target="_blank" class="download-btn">
-                                    <img src="logo/download.png" alt="download" height="20" width="20">
-                                    Download
-                                </a>
-                            </div>
-                        </li>
-                        <li class="unit-item">
-                            <div class="unit-title">
-                                <h3>Unit 8: <hr>Array</h3>
-                                <a href="https://drive.google.com/drive/folders/1dZLBFPW5nS3I3syccZF9v2002DozQ69u?usp=drive_link" download target="_blank"  class="download-btn">
-                                    <img src="logo/download.png" alt="download" height="20" width="20">
-                                    Download
-                                </a>
-                            </div>
-                        </li>
-                        
+                    
                     </ul>
                 </div>
+                </details>
+
+                <!-- DSA PYQ's Solution (BEU) -->
+                <details class="sub-card">
+                <summary>DSA PYQ's Solution (BEU)</summary>
+                <div class="sub-item">
+                    <ul class="unit-list">
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3>DSA PYQ's Solution - 2019 </h3>
+                                <a href="https://drive.google.com/file/d/1m6jf50h0CUooZVEqCMd3JgzCF9xT1OP7/view?usp=drive_link" download target="_blank" class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3>DSA PYQ's Solution - 2020</h3>
+                                <a href="https://drive.google.com/file/d/1RCjdl-MEBCY7NGoseklZi0Howb7P7heZ/view?usp=drive_link" download target="_blank" class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3>DSA PYQ's Solution - 2020sp</h3>
+                                <a href="https://drive.google.com/file/d/1tnRC4NzU_bvpMotXNXsYnh1C_-cZEDCS/view?usp=drive_link" download  target="_blank"  class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                    
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3>DSA PYQ's Solution - 2021</h3>
+                                <a href="https://drive.google.com/file/d/1lLhcMlU__hvBfn8OF87wIyPkuN5I14vN/view?usp=drive_link" download target="_blank"  class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3>DSA PYQ's Solution - 2022</h3>
+                                <a href="https://drive.google.com/file/d/1P2ysbLh3SGEM63AKG3Id3GsFb_7H0OkU/view?usp=drive_link" download target="_blank"  class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                        <li class="unit-item">
+                            <div class="unit-title">
+                                <h3>DSA PYQ's Solution - 2023</h3>
+                                <a href="https://drive.google.com/file/d/1UXpxy9nWL6kuPg0AQ1D111_AypzRY7Kl/view?usp=drive_link" download target="_blank"  class="download-btn">
+                                    <img src="logo/download.png" alt="download" height="20" width="20">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                    
+                    </ul>
+                </div>
+                </details>
+
             </details>
 
             <!-- Python Programming -->

@@ -1,0 +1,210 @@
+<div class="subjects-grid">
+
+        <!-- Computer Science Subject -->
+        <details class="subject-card">
+            <summary>Computer Science</summary>
+            <div class="subject-content">
+                <ul class="unit-list">
+                    <li class="unit-item">
+                        <div class="unit-title">
+                            <h3>Unit 1: Introduction
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ratione nobis, sint quasi veritatis eveniet voluptatibus tempore corporis fuga odit magni corrupti necessitatibus perferendis commodi nostrum? Obcaecati optio animi praesentium.
+                            </h3>
+                            <iframe width="160" height="100" src="https://www.youtube.com/embed/XLof5RAxo6o?si=nugwdm920ZHPzRVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="unit-item">
+                        <div class="unit-title">
+                            <h3>Unit 2: Data Structures</h3>
+                            <iframe width="160" height="100" src="https://www.youtube.com/embed/videoseries?si=csnTO4BB78_SjkjF&amp;list=PLur0XnH30m5wsy5T8qYnEfWdIBO4eN_4C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            
+                        </div>
+                    </li>
+                    <li class="unit-item">
+                        <div class="unit-title">
+                            <h3>Unit 3: Algorithms</h3>
+                            <a href="AI_notes.pdf" download class="download-btn">
+                                <img src="logo/download.png" alt="download" height="20" width="20">
+                                Download
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </details>
+
+
+
+        <!-- next -->
+        <details class="subject-card">
+            <summary>Computer Science</summary>
+            <div class="subject-content">
+                <ul class="unit-list">
+                    <li class="unit-item">
+                        <div class="unit-title">
+                            <h3>Unit 1: Introduction
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ratione nobis, sint quasi veritatis eveniet voluptatibus tempore corporis fuga odit magni corrupti necessitatibus perferendis commodi nostrum? Obcaecati optio animi praesentium.
+                            </h3>
+                            <iframe width="160" height="100" src="https://www.youtube.com/embed/XLof5RAxo6o?si=nugwdm920ZHPzRVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            
+                            </a>
+                        </div>
+                    </li>
+                    <li class="unit-item">
+                        <div class="unit-title">
+                            <h3>Unit 2: Data Structures</h3>
+                            <iframe width="160" height="100" src="https://www.youtube.com/embed/videoseries?si=csnTO4BB78_SjkjF&amp;list=PLur0XnH30m5wsy5T8qYnEfWdIBO4eN_4C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            
+                        </div>
+                    </li>
+                    <li class="unit-item">
+                        <div class="unit-title">
+                            <h3>Unit 3: Algorithms</h3>
+                            <a href="AI_notes.pdf" download class="download-btn">
+                                <img src="logo/download.png" alt="download" height="20" width="20">
+                                Download
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </details>
+        
+        <!-- next2 -->
+        <details class="subject-card">
+            <summary>Computer Science</summary>
+            <div class="subject-content">
+                <ul class="unit-list">
+                    <li class="unit-item">
+                        <div class="unit-title">
+                            <h3>Unit 1: Introduction
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ratione nobis, sint quasi veritatis eveniet voluptatibus tempore corporis fuga odit magni corrupti necessitatibus perferendis commodi nostrum? Obcaecati optio animi praesentium.
+                            </h3>
+                            <iframe width="160" height="100" src="https://www.youtube.com/embed/XLof5RAxo6o?si=nugwdm920ZHPzRVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            
+                            </a>
+                        </div>
+                    </li>
+                    <li class="unit-item">
+                        <div class="unit-title">
+                            <h3>Unit 2: Data Structures</h3>
+                            <iframe width="160" height="100" src="https://www.youtube.com/embed/videoseries?si=csnTO4BB78_SjkjF&amp;list=PLur0XnH30m5wsy5T8qYnEfWdIBO4eN_4C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            
+                        </div>
+                    </li>
+                    <li class="unit-item">
+                        <div class="unit-title">
+                            <h3>Unit 3: Algorithms</h3>
+                            <a href="AI_notes.pdf" download class="download-btn">
+                                <img src="logo/download.png" alt="download" height="20" width="20">
+                                Download
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </details>
+        <!-- next3 -->
+        <details class="subject-card">
+            <summary>Computer Science</summary>
+            <div class="subject-content">
+                <ul class="unit-list">
+                    <li class="unit-item">
+                        <div class="unit-title">
+                            <h3>Unit 1: Introduction
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ratione nobis, sint quasi veritatis eveniet voluptatibus tempore corporis fuga odit magni corrupti necessitatibus perferendis commodi nostrum? Obcaecati optio animi praesentium.
+                            </h3>
+                            <iframe width="160" height="100" src="https://www.youtube.com/embed/XLof5RAxo6o?si=nugwdm920ZHPzRVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            
+                            </a>
+                        </div>
+                    </li>
+                    <li class="unit-item">
+                        <div class="unit-title">
+                            <h3>Unit 2: Data Structures</h3>
+                            <iframe width="160" height="100" src="https://www.youtube.com/embed/videoseries?si=csnTO4BB78_SjkjF&amp;list=PLur0XnH30m5wsy5T8qYnEfWdIBO4eN_4C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            
+                        </div>
+                        <p>Arrays, linked lists, stacks, queues, and trees.</p>
+                    </li>
+                    <li class="unit-item">
+                        <div class="unit-title">
+                            <h3>Unit 3: Algorithms</h3>
+                            <a href="AI_notes.pdf" download class="download-btn">
+                                <img src="logo/download.png" alt="download" height="20" width="20">
+                                Download
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </details>
+        <!-- Artificial Intelligence Subject -->
+        <details class="subject-card">
+            <summary>Artificial Intelligence</summary>
+            <div class="subject-content">
+                <ul class="unit-list">
+                    <li class="unit-item">
+                        <div class="unit-title">
+                            <h3>Unit 1: AI Fundamentals</h3>
+                            <a href="AI_notes.pdf" download class="download-btn">
+                                <img src="logo/download.png" alt="download" height="20" width="20">
+                                Download
+                            </a>
+                        </div>
+                        <p>Introduction to AI concepts and history.</p>
+                    </li>
+                    <li class="unit-item">
+                        <div class="unit-title">
+                            <h3>Unit 2: Machine Learning</h3>
+                            <a href="AI_notes.pdf" download class="download-btn">
+                                <img src="logo/download.png" alt="download" height="20" width="20">
+                                Download
+                            </a>
+                        </div>
+                        <p>Supervised and unsupervised learning techniques.</p>
+                    </li>
+                    <li class="unit-item">
+                        <div class="unit-title">
+                            <h3>Unit 3: Neural Networks</h3>
+                            <a href="AI_notes.pdf" download class="download-btn">
+                                <img src="logo/download.png" alt="download" height="20" width="20">
+                                Download
+                            </a>
+                        </div>
+                        <p>Deep learning and neural network architectures.</p>
+                    </li>
+                </ul>
+            </div>
+        </details>
+        
+        <!-- Add more subjects as needed -->
+        <details class="subject-card">
+            <summary>Web Development</summary>
+            <div class="subject-content">
+                <ul class="unit-list">
+                    <li class="unit-item">
+                        <div class="unit-title">
+                            <h3>Unit 1: HTML & CSS</h3>
+                            <a href="AI_notes.pdf" download class="download-btn">
+                                <img src="logo/download.png" alt="download" height="20" width="20">
+                                Download
+                            </a>
+                        </div>
+                        <p>Fundamentals of web markup and styling.</p>
+                    </li>
+                    <li class="unit-item">
+                        <div class="unit-title">
+                            <h3>Unit 2: JavaScript</h3>
+                            <a href="AI_notes.pdf" download class="download-btn">
+                                <img src="logo/download.png" alt="download" height="20" width="20">
+                                Download
+                            </a>
+                        </div>
+                        <p>Client-side scripting and DOM manipulation.</p>
+                    </li>
+                </ul>
+            </div>
+        </details>
+    </div>

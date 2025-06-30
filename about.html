@@ -1,342 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link href="logo/logo1.png" rel="icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-</head> 
-<style>
-             /* Navigation Menu Styling */
-             .navbar {
-            background-color: #2c3e50;
-            padding: 25px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .menu {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .menu li {
-            margin: 0 5px;
-        }
-        
-        .menu-btn {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            display: block;
-            position: relative;
-        }
-        
-        .menu-btn:hover {
-            background-color: #3498db;
-            transform: translateY(-3px);
-        }
-        
-        .menu-btn.active {
-            background-color: #3498db;
-        }
-        
-        .menu-btn::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background: #3498db;
-            bottom: 5px;
-            left: 50%;
-            transform: translateX(-50%);
-            transition: width 0.3s;
-        }
-        
-        .menu-btn:hover::after {
-            width: 70%;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KKS CS About</title>
+  <meta name="description" content="Learn Computer Science at KKS with free notes, courses and more.">
+  <meta name="author" content="KKS">
+  <meta name="keywords" content="Computer Science, Courses, Notes, KKS">
 
+    <!-- Font Awesome CDN -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
 
-
-         /* Mobile menu button */
-         .mobile-menu-btn {
-            display: none;
-            color: white;
-            font-size: 24px;
-            cursor: pointer;
-            position: absolute;
-            right: 20px;
-            top: 15px;
-        }
-        
-        
-        /* Responsive menu */
-        @media (max-width: 768px) {
-            .menu {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .menu li {
-                margin: 10px 0;
-                width: 100%;
-                text-align: center;
-            }
-            
-            .menu-btn {
-                padding: 12px 0;
-            }
-        }
-
-           /* Responsive menu */
-           @media (max-width: 768px) {
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            .menu {
-                flex-direction: column;
-                align-items: center;
-                position: fixed;
-                top: 60px;
-                left: -100%;
-                width: 100%;
-                background-color: #2c3e50;
-                padding: 10px 0;
-                transition: all 0.3s ease;
-            }
-            
-            .menu.active {
-                left: 0;
-            }
-            
-            .menu li {
-                margin: 5px 0;
-                width: 100%;
-                text-align: center;
-            }
-            
-            .menu-btn {
-                padding: 12px 0;
-                width: 100%;
-            }
-        }
-
-    /* About page styles */
-.about-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.about-container h1 {
-    text-align: center;
-    color: #1a73e8;
-    margin-bottom: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    font-size: 2.5rem;
-}
-
-.about-section {
-    margin-bottom: 4rem;
-    background: #ffffff;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.about-section h2 {
-    color: #1a73e8;
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem;
-}
-
-.about-section p {
-    color: #333;
-    line-height: 1.6;
-    font-size: 1.1rem;
-}
-
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.feature-item {
-    text-align: center;
-    padding: 1.5rem;
-    background: #f8faff;
-    border-radius: 12px;
-    transition: transform 0.3s ease;
-}
-
-.feature-item:hover {
-    transform: translateY(-5px);
-}
-
-.feature-item i {
-    font-size: 2.5rem;
-    color: #1a73e8;
-    margin-bottom: 1rem;
-}
-
-.feature-item h3 {
-    color: #1a73e8;
-    margin-bottom: 1rem;
-}
-
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.team-member {
-    text-align: center;
-    padding: 2rem;
-    background: #f8faff;
-    border-radius: 12px;
-    transition: transform 0.3s ease;
-}
-
-.team-member:hover {
-    transform: translateY(-5px);
-}
-
-.team-member img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    border: 4px solid #1a73e8;
-}
-
-.team-member h3 {
-    color: #1a73e8;
-    margin-bottom: 0.5rem;
-}
-
-.team-member p {
-    color: #666;
-    margin-bottom: 1rem;
-}
-
-.team-member .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    
-}
-
-.team-member .social-links a {
-    color: #1a73e8;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-}
-
-.team-member .social-links a:hover {
-    color: #1557b0;
-}
-
-.tech-stack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.tech-item {
-    background: #f8faff;
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #1a73e8;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.tech-item:hover {
-    background: #1a73e8;
-    color: #ffffff;
-    transform: translateY(-2px);
-}
-
-.tech-item i {
-    font-size: 1.2rem;
-}
-
-        
-</style>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-    <nav class="navbar">
-        <div class="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
-        <ul class="menu">
-            <li><a href="index.html" class="menu-btn">Home</a></li>
-            <li><a href="course.html" class="menu-btn">Course</a></li>
-            <li><a href="Notes.html" class="menu-btn ">Notes</a></li>
-            <li><a href="#about" class="menu-btn active">About</a></li>
-            <li><a href="contact.html" class="menu-btn">Contact</a></li>
-        </ul>
-    </nav>
 
+  <!-- ✅ HEADER/NAVIGATION BAR -->
+  <header id="main-header">
     <div class="container">
-        <div class="about-container">
-            <h1>About Us</h1>
-            
-            </section>
+      <div class="logo-container">
+        <a href="https://www.youtube.com/@Kks_CS" target="_blank">
+        <img src="assets/images/kkscslogo.png" alt="KKS Logo" class="logo-img" /> </a>
 
-            <section class="about-section team">
-                
-                <div class="team-grid">
-                    <div class="team-member">
-                        <img src="images/kks.jpg" alt="Team Member">
-                        <h2>Kailash Sharma</h2>
-                        <p>Founder Of <b>"KKS Computer Science"</b></p>
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/kailash-sharma-kks-60a32832b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://github.com/kks1119121198" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://www.instagram.com/kks1119121198/"><i class="fa-brands fa-instagram" target="_blank"></i></a>
-                            <a href="https://www.facebook.com/kks1119121198?mibextid=ZbWKwL"><i class="fa-brands fa-facebook" target="_blank"></i></a>
-                            <a href="https://telegram.me/KksCS"><i class="fa-brands fa-telegram" target="_blank"></i></a>
-                            <a href="https://telegram.me/kks_111119"><i class="fa-brands fa-telegram" target="_blank"></i></a>
-                            <a href="https://www.whatsapp.com/channel/0029VamMRrR7oQhVDf7SfL3r"><i class="fa-brands fa-whatsapp" target="_blank"></i></a> 
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-   <!-- Add this script at the end of your body tag -->
- <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const menu = document.querySelector('.menu');
         
-        mobileMenuBtn.addEventListener('click', function() {
-            menu.classList.toggle('active');
-        });
-    });
-</script>
+        <span class="logo-text">KKS CS</span>
+      </div>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+          <li><a href="courses.html"><i class="fas fa-graduation-cap"></i>Courses</a></li>
+          <li><a href="notes.html"><i class="fas fa-book"></i>Notes</a></li>
+          <li><a href="contact.html"><i class="fas fa-phone"></i>Contact</a></li>
+          <li><a href="about.html"><i class="fas fa-info-circle"></i>About</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </nav>
+    </div>
+  </header>
+
+
+<section class="about-section">
+    <h2>KKS Computer Science</h2>
+    <a href="https://www.youtube.com/@kks_cs" target="_blank">
+      <img src="assets/images/kkscslogo.png" alt="KKS Profile" class="about-page-pic" />
+      </a>
+    <div class="about-container">
+      
+      <div class="about-content">
+        
+        <p>
+          Welcome to <strong>KKS CS</strong> - your trusted destination for learning Computer Science online.
+        </p>
+        <p>
+          We are committed to making complex CS concepts easy and accessible for every student — whether you're preparing for university exams, competitive programming, or simply learning out of passion.
+        </p>
+        <p>
+          Our YouTube channel features high-quality video lectures, one-shot modules, topic-wise explanations, and previous year question solutions for subjects like:
+          <b><i>
+          Programming in C/C++, 
+          Data Structures, 
+          Algorithm, 
+          Database, 
+          OOPs Using C++, 
+          Computer Networks, 
+          Web Designing, 
+          Python Programming, 
+          IT Workshop, 
+          Operating System, 
+          Software Engineering, 
+          Computer Organization, 
+          Compiler Design, 
+          Computer Graphics, 
+          Theory of Computation, 
+          Digital Logic Design, 
+          Artificial Intelligence, 
+          Machine Learning, 
+          GATE Preparation, 
+          BEU/AKU PYQs and more...
+          </i></b>
+        </p>
+        <p>
+          💡 At KKS CS, our mission is to empower learners with simplified content, clear visuals, and consistent support. Whether you're in your first year or final year, we've got something valuable for you.
+        </p>
+        <p>
+          🔔 Subscribe to our YouTube channel and stay updated with the latest lessons and resources: <br>
+          👉 Visit our channel <a href="https://www.youtube.com/@KKS_CS" target="_blank"><b><i>KKS CS</i></b></a> on YouTube for free CS courses and notes!
+
+        </p>
+
+        <h2>Connect with Us</h2>
+        <div class="social-links">
+          <a href="https://www.youtube.com/@KKS_CS" target="_blank"><i class="fab fa-youtube"></i></a>
+
+          <a href="https://telegram.me/kkscs" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+
+          <a href="https://www.instagram.com/kks1119121198" target="_blank"><i class="fab fa-instagram"></i></a>
+
+          <a href="https://www.linkedin.com/in/kailash-sharma-60a32832b" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+          <a href="mailto:kailashkr111119@gmail.com"><i class="fas fa-envelope"></i></a>
+          
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+
+
+
+
+    <!-- ✅ FOOTER -->
+  <footer id="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>KKS Computer Science</h2>
+      <p><b>KKS CS</b> is trusted platform for learning Computer Science technology online with high-quality content, free notes, beginner to advanced courses, and practical tutorials. Whether you're a student (<b>CS & IT</b>), competitive exam (<b>GATE</b>) aspirant, or just passionate about technology, KKS CS helps you build strong technical foundations. </p>
+      <p><i>Learn, grow, and succeed — the smart way!</i></p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy;  KKS CS. All rights reserved 2025.</p>
+  </div>
+</footer>
+
+<!-- ✅ BACK TO TOP BUTTON -->
+<button id="backToTop" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+  
+
+
+  <!-- ✅ SCRIPT -->
+  <script src="script.js"></script>
 </body>
 </html>

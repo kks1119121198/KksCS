@@ -159,29 +159,30 @@ document.querySelectorAll(".subject-card").forEach((details) => {
 
 
 //search bar
-    function filterCourseCards() {
-    const input = document.getElementById("courseSearchInput").value.toLowerCase();
-    const allCourseRows = document.querySelectorAll(".course-index-row");
+  //   function filterCourseCards() {
+  //   const input = document.getElementById("courseSearchInput").value.toLowerCase();
+  //   const allCourseRows = document.querySelectorAll(".course-index-row");
 
-    allCourseRows.forEach(row => {
-      const cards = row.querySelectorAll(".course-index-card");
+  //   allCourseRows.forEach(row => {
+  //     const cards = row.querySelectorAll(".course-index-card");
 
-      let rowHasVisibleCard = false;
+  //     let rowHasVisibleCard = false;
 
-      cards.forEach(card => {
-        const text = card.querySelector("span").textContent.toLowerCase();
+  //     cards.forEach(card => {
+  //       const text = card.querySelector("span").textContent.toLowerCase();
 
-        if (text.includes(input)) {
-          card.style.display = "";
-          rowHasVisibleCard = true;
-        } else {
-          card.style.display = "none";
-        }
-      });
+  //       if (text.includes(input)) {
+  //         card.style.display = "";
+  //         rowHasVisibleCard = true;
+  //       } else {
+  //         card.style.display = "none";
+  //       }
+  //     });
 
-      // hide the entire subject row if no cards match
-      const subjectRow = row.closest(".course-subject-row");
-      subjectRow.style.display = rowHasVisibleCard ? "" : "none";
-    });
-  }
+  //     // hide the entire subject row if no cards match
+  //     const subjectRow = row.closest(".course-subject-row");
+  //     subjectRow.style.display = rowHasVisibleCard ? "" : "none";
+  //   });
+  // }
+
   

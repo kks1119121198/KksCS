@@ -25,6 +25,62 @@ body {
   line-height: 1.6;
 }
 
+
+
+
+
+
+/* body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+.login-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 300px;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background: #0056b3;
+}
+
+
+
+
+
+
+
+
                 /* ====== SPLASH SCREEN ====== */
                 #splash-screen {
                   background-color: #ffffff;
@@ -378,12 +434,12 @@ body {
 }
 
 
-.course-search-bar {
+/* .course-search-bar {
   margin-bottom: 1.5rem;
   text-align: center;
-}
+} */
 
-.course-search-bar input {
+/* .course-search-bar input {
   width: 90%;
   max-width: 400px;
   padding: 10px 15px;
@@ -391,7 +447,7 @@ body {
   border-radius: 8px;
   border: 1px solid #ccc;
   outline: none;
-}
+} */
 
 
 

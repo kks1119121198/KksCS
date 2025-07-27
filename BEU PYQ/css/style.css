@@ -1,0 +1,346 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+/* Header */
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.3rem 0; /* slightly reduced padding */
+}
+
+.header-container {
+  width: 100%;
+  padding: 0 2rem; /* slight padding, you can use 1rem if you want edge-to-edge */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 55px;
+}
+
+
+/* Logo */
+.logo img {
+  height: 48px;  /* increased logo size */
+  
+  width: 48px;
+}
+
+/* Title Centered */
+.site-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.9rem;  /* increased title size */
+  font-weight: bold;
+}
+
+/* Menu */
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #ffdd99;
+}
+
+/* Hamburger Icon */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 55px; /* match new header height */
+    right: 1rem;
+    background-color: #0077cc;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .site-title {
+    font-size: 1.6rem; /* slightly larger on mobile too */
+  }
+}
+
+
+.navbar a i {
+  margin-right: 6px;
+}
+
+
+
+
+
+
+/* Notice Bar */
+.notice-bar {
+  background-color: #ffefc0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.notice-text {
+  display: inline-block;
+  padding: 0.4rem 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #cc6600;
+  animation: scroll-left 15s linear infinite;
+}
+
+/* Scroll Animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Content */
+main {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+main h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* Semester Buttons */
+
+/* Semester Buttons Layout */
+.semester-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Individual Button Styling */
+.semester-list a {
+  background-color: #e6f0ff;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: #0077cc;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  text-align: center;
+  flex: 1 1 calc(25% - 1rem); /* 4 per row by default */
+  min-width: 120px;
+}
+
+/* Responsive: 2 per row on mobile */
+@media (max-width: 768px) {
+  .semester-list a {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+
+
+
+.semester-list a {
+  background-color: #e6f0ff;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: #0077cc;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.semester-list a:hover {
+  background-color: #cce0ff;
+}
+
+
+
+
+
+
+
+.page-title {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.subjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 30px;
+}
+
+.subject-card {
+  background: #f3f3f3;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.subject-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.subject-card a {
+  display: inline-block;
+  margin: 5px 10px;
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.subject-card a i {
+  margin-right: 6px;
+}
+
+
+
+
+
+
+
+.pyq-year-box {
+      border: 2px solid #007bff;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 25px auto;
+      background-color: #ffffff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      max-width: 600px;
+      text-align: left;
+    }
+
+    /* Hover effects for both desktop & mobile (force on tap) */
+    .pyq-year-box:hover,
+    .pyq-year-box:active,
+    .pyq-year-box:focus-within {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 15px rgba(0, 123, 255, 0.2);
+    }
+
+    .year-heading {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 8px;
+    }
+
+    .subject-list {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .subject-list li {
+      margin-bottom: 10px;
+    }
+
+.subject-list a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.subject-list a:hover,
+.subject-list a:active {
+  color: #007bff;
+}
+
+    @media (max-width: 600px) {
+      .year-heading {
+        font-size: 18px;
+      }
+
+      .subject-list a {
+        font-size: 15px;
+      }
+    }
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
